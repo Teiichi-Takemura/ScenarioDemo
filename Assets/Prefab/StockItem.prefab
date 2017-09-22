@@ -237,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1280361109983560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1207, y: 0.0005, z: -0.0010000626}
+  m_LocalPosition: {x: -0.128, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.003001883, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -250,8 +250,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924604387142926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14759, y: 0.0005, z: -0.001}
-  m_LocalScale: {x: 0.005, y: 0.015, z: 0.005}
+  m_LocalPosition: {x: -0.1437, y: 0, z: -0.001}
+  m_LocalScale: {x: 0.003, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
   m_RootOrder: 3
@@ -263,7 +263,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166182221226110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0837, y: 0.0019, z: -0.0010000626}
+  m_LocalPosition: {x: -0.0994, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -276,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1646750757495896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1483, y: -0.0031, z: -0.0010000626}
+  m_LocalPosition: {x: 0.173, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -302,8 +302,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1394153693635452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16948, y: -0.0014, z: -0.0010000626}
-  m_LocalScale: {x: 0.0050018835, y: 0.015, z: 0.005}
+  m_LocalPosition: {x: -0.1651, y: 0, z: -0.0010000626}
+  m_LocalScale: {x: 0.003001883, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
   m_RootOrder: 2
@@ -315,7 +315,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1596946700523572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0835, y: -0.001, z: -0.0010000626}
+  m_LocalPosition: {x: 0.0884, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -328,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1325081902162156}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0169, y: -0.003, z: -0.0010000626}
+  m_LocalPosition: {x: 0.0081, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -341,7 +341,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1403716189999188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1082, y: -0.0024, z: -0.0010000626}
+  m_LocalPosition: {x: 0.1197, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -354,7 +354,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1424083904264410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.051, y: -0.002, z: -0.0010000626}
+  m_LocalPosition: {x: 0.05, y: 0, z: -0.0010000626}
   m_LocalScale: {x: 0.002998117, y: 0.015, z: 0.005}
   m_Children: []
   m_Father: {fileID: 4800251546943538}
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1403958482973152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0023, y: 0.401, z: -0.008}
+  m_LocalPosition: {x: 0.0009, y: -0.0997, z: -1}
   m_LocalScale: {x: 2.655, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4390677394192160}
@@ -621,7 +621,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fe9b97ab8b34f354d9107b68c170fd99, type: 2}
+  - {fileID: 2100000, guid: c239282730878854fb57d2a385c462a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -757,7 +757,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4280821800
+    rgba: 4283733588
 --- !u!102 &102088756100133300
 TextMesh:
   serializedVersion: 3
@@ -794,7 +794,7 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 20
-  m_FontStyle: 1
+  m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
   m_Color:
@@ -820,7 +820,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4280821800
+    rgba: 4283733588
 --- !u!102 &102264153858293042
 TextMesh:
   serializedVersion: 3
@@ -853,10 +853,10 @@ TextMesh:
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 4
+  m_Anchor: 3
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 20
+  m_FontSize: 18
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
@@ -891,14 +891,14 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166182221226110}
-  m_Text: "\uFF08\u682A\uFF09\u90F7\u9244\u5DE5\u6240"
+  m_Text: "\uFF08\u682A\uFF09\u90F7\u9244\u5DE5\u6240\u90F7\u9244\u5DE5\u6240\u90F7\u9244\u5DE5\u6240\u90F7\u9244\u5DE5\u6240"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 4
-  m_Alignment: 1
+  m_Anchor: 3
+  m_Alignment: 0
   m_TabSize: 4
-  m_FontSize: 20
+  m_FontSize: 18
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
@@ -919,7 +919,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 15
+  m_FontSize: 18
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
@@ -965,9 +965,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tag: defaultButton
-  Default: {fileID: 2800000, guid: 02fbcb395b7ab57479d837e905a78757, type: 3}
-  Focus: {fileID: 2800000, guid: da9bb5e3d880ae94598173ff42a7e7ed, type: 3}
-  Press: {fileID: 2800000, guid: 0049948caad004447a28c67a2c9dcea2, type: 3}
+  Default: {fileID: 2800000, guid: be08c6a6ff9c393428e4193c597575cd, type: 3}
+  Focus: {fileID: 2800000, guid: eef1960a60a53dd448bc5992b20e6477, type: 3}
+  Press: {fileID: 2800000, guid: da9bb5e3d880ae94598173ff42a7e7ed, type: 3}
   Selected: {fileID: 2800000, guid: f0c2b379f73064243bb6cfe6a4c99c8e, type: 3}
   FocusSelected: {fileID: 2800000, guid: 2dd7ea7402ed9804aaf5d791b30a559b, type: 3}
   PressSelected: {fileID: 2800000, guid: b0fc981183a3f084bb9b0ddbf6a868fc, type: 3}
@@ -995,18 +995,7 @@ MonoBehaviour:
   KeywordRequiresGaze: 1
   OnSelectEvents:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SelectStock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   OnDownEvent:

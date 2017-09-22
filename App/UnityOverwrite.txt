@@ -11,7 +11,7 @@ GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24
 ScenarioDemo\App.cs: 18E672285497E7B9E17251BE43DD3A1F
 ScenarioDemo\Package.appxmanifest: D594A44A2F8E089D3ADB78E79AE76494
 ScenarioDemo\project.json: 1D02BC64BAC0D041019673A1C4C51737
-ScenarioDemo\ScenarioDemo.csproj: 117A3093468E6F0D854CA580B8CE7EB1
+ScenarioDemo\ScenarioDemo.csproj: modified
 ScenarioDemo\ScenarioDemo.csproj.user: modified
 ScenarioDemo\ScenarioDemo.sln: D375A80678FA21E063F95D7C77883E1E
 ScenarioDemo\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D

@@ -217,12 +217,12 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{e74be5b2-0375-4ad5-a58e-10cd489f0ff5}</Project>
+      <Project>{d4c2fea0-9a22-492f-9370-d18c5ed26dd9}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{cdd23e06-4f71-41ed-978b-a0432645cb2d}</Project>
+      <Project>{500ed98d-c6d4-4bb0-aa5b-806920fc9cf7}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>
