@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ec8cebe0-babf-47d6-84ae-39a00cde1e32}</ProjectGuid>
+    <ProjectGuid>{35cdda8a-a614-4787-8738-20f31b6b1579}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{028d1cc6-8fcb-4fcb-857f-ec5be04481c6}</Project>
+      <Project>{3d1d46e9-8389-463c-b055-5a3930a299f9}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine">

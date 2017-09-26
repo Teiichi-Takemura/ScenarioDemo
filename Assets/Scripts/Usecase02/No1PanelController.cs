@@ -33,11 +33,11 @@ public class No1PanelController : MonoBehaviour
         CreateStockItem(13, "1689", "東証ETF", "ETFS　天然ガス上場投資信託", "14:06", "5", true, "25.00", "1", "351,800", "電気・ガス業");
         CreateStockItem(14, "4976", "東証JQS", "東洋ドライルーブ(株)", "14:41", "2,569", false, "12.11", "254", "25,300", "ゴム製品");
         CreateStockItem(15, "3758", "東証JQS", "(株)フエリア", "14:01", "2,593", true, "23.89", "500", "4,245,200", "化学");
-        CreateStockItem(16, "6208", "東証１部", "(株)石川製作所", "13:41", "1,725", true, "21.05", "300", "3,151,800", "その他製品");
-        CreateStockItem(17, "3150", "東証JQS", "(株)グリムス", "14:07", "1,679", true, "19.67", "276", "89,100", "電気・ガス業");
-        CreateStockItem(18, "6149", "東証JQS", "(株)小田原エンジニアリング", "14:06", "1,962", false, "19.49", "320", "544,100", "精密機器");
-        CreateStockItem(19, "7743", "東証１部", "(株)シード", "14:07", "2,760", true, "18.25", "426", "100,000", "建設業");
-        CreateStockItem(20, "6092", "マザーズ", "(株)エンバイオ・ホールディングス", "14:07", "1,260", true, "17.54", "188", "1,391,500", "サービス");
+        //CreateStockItem(16, "6208", "東証１部", "(株)石川製作所", "13:41", "1,725", true, "21.05", "300", "3,151,800", "その他製品");
+        //CreateStockItem(17, "3150", "東証JQS", "(株)グリムス", "14:07", "1,679", true, "19.67", "276", "89,100", "電気・ガス業");
+        //CreateStockItem(18, "6149", "東証JQS", "(株)小田原エンジニアリング", "14:06", "1,962", false, "19.49", "320", "544,100", "精密機器");
+        //CreateStockItem(19, "7743", "東証１部", "(株)シード", "14:07", "2,760", true, "18.25", "426", "100,000", "建設業");
+        //CreateStockItem(20, "6092", "マザーズ", "(株)エンバイオ・ホールディングス", "14:07", "1,260", true, "17.54", "188", "1,391,500", "サービス");
 
         //var stockItem = Instantiate(StockItemPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
         //stockItem.transform.parent = gameObject.transform;
@@ -70,10 +70,10 @@ public class No1PanelController : MonoBehaviour
         var parentTransform = gameObject.transform;
         var stockItem = Instantiate(StockItemPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
         stockItem.transform.parent = parentTransform;
-        stockItem.transform.localScale = new Vector3(2.655f, 0.5f, 1.0f);
+        stockItem.transform.localScale = new Vector3(2.655f, 0.8f, 1.0f);
 
         stockItem.transform.position = new Vector3(parentTransform.position.x - 0.0016f,
-            parentTransform.position.y + 0.22050f - 0.01900f * itemNo, parentTransform.position.z - 0.008f);
+            parentTransform.position.y + 0.2305f - 0.0300f * itemNo, parentTransform.position.z - 0.008f);
         
         // append select event
         var interactiveModel = stockItem.GetComponent<Interactive>();
@@ -238,7 +238,7 @@ public class No1PanelController : MonoBehaviour
                 case "StockCodeLabel":
                     label.text = stockCode;
                     break;
-                case "StockTypeLabel":
+                case "StockIndustryLabel":
                     label.text = stockIndustry;
                     break;
                 case "StockNameLabel":
