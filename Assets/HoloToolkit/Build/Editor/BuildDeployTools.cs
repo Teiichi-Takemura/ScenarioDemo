@@ -109,20 +109,9 @@ namespace HoloToolkit.Unity
                 vswhereP.Dispose();
             }
 
-            string externalScriptingEditorPath = EditorPrefs.GetString("kScriptsDefaultApp");
-            string[] paths = output.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-
-            for (int i = 0; i < paths.Length; i++)
-            {
-                paths[i] = paths[i].Replace(Environment.NewLine, "");
-                if (externalScriptingEditorPath.Contains(paths[i]))
-                {
-                    return paths[i] + @"\MSBuild\" + msBuildVersion + @"\Bin\MSBuild.exe";
-                }
-            }
-
-            Debug.LogError("Unable to find a valid path to Visual Studio Instance!");
-            return string.Empty;
+            output = output + @"\MSBuild\" + msBuildVersion + @"\Bin\MSBuild.exe";
+            output = output.Replace(Environment.NewLine, "");
+            return output;
         }
 
         public static bool RestoreNugetPackages(string nugetPath, string storePath)

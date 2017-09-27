@@ -424,6 +424,9 @@
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level1">
       <PackagePath>Data\level1</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level2">
+      <PackagePath>Data\level2</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
@@ -442,8 +445,14 @@
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets2.assets">
+      <PackagePath>Data\sharedassets2.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level2.resS">
+      <PackagePath>Data\level2.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
@@ -453,6 +462,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets2.assets.resS">
+      <PackagePath>Data\sharedassets2.assets.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>

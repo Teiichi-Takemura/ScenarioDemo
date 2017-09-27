@@ -126,7 +126,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HoloToolkit-Examples\Medical\Editor\VolumeInformationEditor.cs" />
     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPortal.cs" />
     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPrefs.cs" />
     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployTools.cs" />
@@ -145,12 +144,10 @@
     <Compile Include="Assets\HoloToolkit\Sharing\Scripts\Editor\SharingMenu.cs" />
     <Compile Include="Assets\HoloToolkit\Sharing\Scripts\Editor\SharingStageEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialMapping\Scripts\RemoteMapping\Editor\RoomMeshExporter.cs" />
-    <Compile Include="Assets\HoloToolkit\SpatialMapping\Scripts\SpatialProcessing\Editor\SurfaceMeshesToPlanesEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerBaseEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioMiniManagerEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioProfiler.cs" />
-    <Compile Include="Assets\HoloToolkit\UI\Scripts\Editor\KeyboardInputFieldEditor.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Editor\SetIconsWindow.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Editor\TextureScale.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\AutoConfigureMenu.cs" />
@@ -161,22 +158,17 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\EnforceEditorSettings.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\ExternalProcess.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\HeadsetAdjustmentEditor.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\Int3Drawer.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\LayerMaskExtensions.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\OpenLocalFileEditor.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\OpenLocalFolderEditor.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\ProjectSettingsWindow.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\SaveLocalFileEditor.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\SceneSettingsWindow.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\USBDeviceInfo.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Editor\USBDeviceListener.cs" />
+    <Compile Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Editor\CustomMaterialEditor.cs" />
+    <Compile Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Editor\FastConfigurable2SidedGUI.cs" />
+    <Compile Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Editor\FastConfigurableGUI.cs" />
+    <Compile Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Editor\ShaderGUIUtils.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\PlaneCut.cginc" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderShared.cginc" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderSlice.shader" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderThickSlice.shader" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\math.cginc" />
     <None Include="Assets\HoloToolkit-Examples\Prototyping\Shaders\UnlitTransparentTriplanar.shader" />
     <None Include="Assets\HoloToolkit-Examples\Prototyping\Shaders\UnlitTriplanar.shader" />
     <None Include="Assets\HoloToolkit\Input\Shaders\Cursor.shader" />
@@ -191,6 +183,28 @@
     <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
     <None Include="Assets\HoloToolkit\UI\Fonts\LICENSE.txt" />
     <None Include="Assets\HoloToolkit\UI\Shaders\3DTextShader.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurable.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\BlinnPhongConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\FastConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\FastConfigurable.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\FastConfigurable2Sided.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\HoloToolkitCommon.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\macro.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\HoloToolkitCommon.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurable.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\StandardFast.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitNoDepthTest.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\WindowOcclusion.shader" />
+    <None Include="Assets\HoloToolkit\Utilities\Shaders\macro.cginc" />
     <None Include="Assets\Materials\3D Text Shader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

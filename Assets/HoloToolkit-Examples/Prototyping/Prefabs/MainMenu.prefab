@@ -385,7 +385,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23255319271467578
 MeshRenderer:
@@ -417,7 +416,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23351500604254938
 MeshRenderer:
@@ -449,7 +447,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23687371413546698
 MeshRenderer:
@@ -481,7 +478,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23772331920133806
 MeshRenderer:
@@ -513,7 +509,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23937194039074298
 MeshRenderer:
@@ -545,7 +540,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33154341781939892
 MeshFilter:

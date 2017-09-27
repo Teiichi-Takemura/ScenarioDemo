@@ -29,5 +29,6 @@
   </Applications>
   <Capabilities>
     <uap2:Capability Name="spatialPerception" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>

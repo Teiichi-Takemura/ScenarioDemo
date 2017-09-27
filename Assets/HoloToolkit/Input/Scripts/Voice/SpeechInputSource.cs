@@ -4,7 +4,7 @@
 using System;
 using UnityEngine;
 
-#if UNITY_WSA || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || UNITY_WSA
 using UnityEngine.Windows.Speech;
 #endif
 
@@ -42,7 +42,7 @@ namespace HoloToolkit.Unity.InputModule
         [Tooltip("The keywords to be recognized and optional keyboard shortcuts.")]
         public KeywordAndKeyCode[] Keywords;
 
-#if UNITY_WSA || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || UNITY_WSA
         private KeywordRecognizer keywordRecognizer;
 
 

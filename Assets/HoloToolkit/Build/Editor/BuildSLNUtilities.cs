@@ -102,22 +102,29 @@ namespace HoloToolkit.Unity
 
             EditorUserBuildSettings.SwitchActiveBuildTarget(buildTargetGroup, buildInfo.BuildTarget);
 
-            WSAUWPBuildType? oldWSAUWPBuildType = EditorUserBuildSettings.wsaUWPBuildType;
-
-            if (buildInfo.WSAUWPBuildType.HasValue)
+            WSASDK oldWSASDK = EditorUserBuildSettings.wsaSDK;
+            if (buildInfo.WSASdk.HasValue)
             {
-                EditorUserBuildSettings.wsaUWPBuildType = buildInfo.WSAUWPBuildType.Value;
+                EditorUserBuildSettings.wsaSDK = buildInfo.WSASdk.Value;
+            }
+
+            WSAUWPBuildType? oldWSAUWPBuildType = null;
+            if (EditorUserBuildSettings.wsaSDK == WSASDK.UWP)
+            {
+                oldWSAUWPBuildType = EditorUserBuildSettings.wsaUWPBuildType;
+                if (buildInfo.WSAUWPBuildType.HasValue)
+                {
+                    EditorUserBuildSettings.wsaUWPBuildType = buildInfo.WSAUWPBuildType.Value;
+                }
             }
 
             var oldWSAGenerateReferenceProjects = EditorUserBuildSettings.wsaGenerateReferenceProjects;
-
             if (buildInfo.WSAGenerateReferenceProjects.HasValue)
             {
                 EditorUserBuildSettings.wsaGenerateReferenceProjects = buildInfo.WSAGenerateReferenceProjects.Value;
             }
 
             var oldColorSpace = PlayerSettings.colorSpace;
-
             if (buildInfo.ColorSpace.HasValue)
             {
                 PlayerSettings.colorSpace = buildInfo.ColorSpace.Value;
@@ -131,7 +138,10 @@ namespace HoloToolkit.Unity
             string buildError = "Error";
             try
             {
-                VerifyWsaUwpSdkIsInstalled(EditorUserBuildSettings.wsaUWPSDK);
+                if (EditorUserBuildSettings.wsaSDK == WSASDK.UWP)
+                {
+                    VerifyWsaUwpSdkIsInstalled(EditorUserBuildSettings.wsaUWPSDK);
+                }
 
                 // For the WSA player, Unity builds into a target directory.
                 // For other players, the OutputPath parameter indicates the
@@ -169,6 +179,8 @@ namespace HoloToolkit.Unity
                 {
                     EditorUserBuildSettings.wsaUWPBuildType = oldWSAUWPBuildType.Value;
                 }
+
+                EditorUserBuildSettings.wsaSDK = oldWSASDK;
 
                 EditorUserBuildSettings.wsaGenerateReferenceProjects = oldWSAGenerateReferenceProjects;
 
@@ -359,9 +371,7 @@ namespace HoloToolkit.Unity
 
                     case XmlNodeType.EndElement:
                         if (string.Equals(reader.Name, "SceneList", StringComparison.InvariantCultureIgnoreCase))
-                        {
                             return result;
-                        }
                         break;
                 }
             }

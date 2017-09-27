@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -284,6 +284,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4842640189646236, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.731
@@ -327,7 +332,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1468336212819264, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464272686544672, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
       propertyPath: m_LocalPosition.x
@@ -449,6 +454,44 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4554122176835126, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.1515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554122176835126, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.1525
+      objectReference: {fileID: 0}
+    - target: {fileID: 102139646484977536, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: m_Text
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 360269278}
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GotoMainScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288112386828422, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
+        type: 2}
+      propertyPath: OnSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114372563356896170, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
     - {fileID: 114615986333878340, guid: 66cc2ac75a3d9ff43a41f15e1539e528, type: 2}
@@ -1051,6 +1094,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1784301118841214, guid: 66cc2ac75a3d9ff43a41f15e1539e528,
     type: 2}
   m_PrefabInternal: {fileID: 71217221}
+--- !u!114 &360269278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360269277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2744fbeadb1369544b49b25bfeb6744a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &387619316
 Prefab:
   m_ObjectHideFlags: 0
@@ -3632,6 +3686,9 @@ GameObject:
   - component: {fileID: 1336554281}
   - component: {fileID: 1336554282}
   - component: {fileID: 1336554283}
+  - component: {fileID: 1336554284}
+  - component: {fileID: 1336554285}
+  - component: {fileID: 1336554286}
   m_Layer: 0
   m_Name: No1Panel
   m_TagString: Untagged
@@ -3684,6 +3741,61 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7895accf9c003c94fa68a669be3f823a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1336554284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336554280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2795b3e072e1745a4f8c670d64284f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  KeywordsAndResponses:
+  - Keyword: go menu
+    KeyCode: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1336554286}
+          m_MethodName: GotoMainScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+--- !u!114 &1336554285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336554280}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62fd7a55ba7458499b69cae18f83806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  Keywords: []
+--- !u!114 &1336554286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336554280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2744fbeadb1369544b49b25bfeb6744a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1400513865 stripped
@@ -4362,88 +4474,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1730355235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1730355239}
-  - component: {fileID: 1730355238}
-  - component: {fileID: 1730355237}
-  - component: {fileID: 1730355236}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1730355236
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730355235}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 5c8ebd37ad37aed4fab38c710fa7105a, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1730355237
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730355235}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1730355238
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730355235}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1730355239
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730355235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17174204, y: 0.4603489, z: 1.5}
-  m_LocalScale: {x: 1, y: 1, z: 0.1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1740522634
 GameObject:
   m_ObjectHideFlags: 0
