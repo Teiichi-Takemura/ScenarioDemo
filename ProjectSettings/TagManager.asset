@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StockChart
   - StockChartBackground
+  - DebugText
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,7 @@ ScenarioDemo.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 ScenarioDemo\App.cs: 18E672285497E7B9E17251BE43DD3A1F
-ScenarioDemo\Package.appxmanifest: 3E689F3946F443D103135269C5F31EA7
+ScenarioDemo\Package.appxmanifest: 71E6B6CC545761FB7F3AB30749DF4D37
 ScenarioDemo\project.json: 1D02BC64BAC0D041019673A1C4C51737
 ScenarioDemo\ScenarioDemo.csproj: modified
 ScenarioDemo\ScenarioDemo.csproj.user: modified

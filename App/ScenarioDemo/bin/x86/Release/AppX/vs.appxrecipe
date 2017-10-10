@@ -19,7 +19,7 @@
     <DeployOptionalPackages>true</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>89A4977B7EAF497520EBFD679C03786D39C9DB45413AFF1074EC5416443E5CDB</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>6C5249D996ED21F880264C48DBF16CF9A6F5E544311A91E5F00F94F9AB406D5E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ScenarioDemo_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ScenarioDemo_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>ScenarioDemo</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-27T09:12:49.574</Modified>
+      <Modified>2017-10-06T09:13:39.478</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\bin\x86\Release\ScenarioDemo.exe">
       <PackagePath>entrypoint\ScenarioDemo.exe</PackagePath>
-      <Modified>2017-09-27T09:12:32.832</Modified>
+      <Modified>2017-10-06T09:13:25.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-09-27T09:11:43.935</Modified>
+      <Modified>2017-10-06T09:12:47.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -555,19 +555,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-09-27T09:11:09.446</Modified>
+      <Modified>2017-10-06T09:12:15.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-09-27T09:11:05.529</Modified>
+      <Modified>2017-10-06T09:12:12.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2017-09-27T09:11:06.504</Modified>
+      <Modified>2017-10-06T09:12:12.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level2">
       <PackagePath>Data\level2</PackagePath>
-      <Modified>2017-09-27T09:11:07.697</Modified>
+      <Modified>2017-10-06T09:12:14.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -575,59 +575,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-09-27T09:11:10.585</Modified>
+      <Modified>2017-10-06T09:12:16.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-09-27T09:11:09.774</Modified>
+      <Modified>2017-10-06T09:12:15.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2017-09-27T09:11:09.807</Modified>
+      <Modified>2017-10-06T09:12:16.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-09-27T09:11:09.901</Modified>
+      <Modified>2017-10-06T09:12:16.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2017-09-27T09:11:10.035</Modified>
+      <Modified>2017-10-06T09:12:16.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
-      <Modified>2017-09-27T09:11:10.130</Modified>
+      <Modified>2017-10-06T09:12:16.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2017-09-27T09:11:06.458</Modified>
+      <Modified>2017-10-06T09:12:12.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
-      <Modified>2017-09-27T09:11:07.681</Modified>
+      <Modified>2017-10-06T09:12:14.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2017-09-27T09:11:09.805</Modified>
+      <Modified>2017-10-06T09:12:16.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-09-27T09:11:09.895</Modified>
+      <Modified>2017-10-06T09:12:16.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-      <Modified>2017-09-27T09:11:10.013</Modified>
+      <Modified>2017-10-06T09:12:16.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\sharedassets2.assets.resS">
       <PackagePath>Data\sharedassets2.assets.resS</PackagePath>
-      <Modified>2017-09-27T09:11:10.123</Modified>
+      <Modified>2017-10-06T09:12:16.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-09-27T09:11:43.858</Modified>
+      <Modified>2017-10-06T09:12:47.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2017-09-27T09:11:43.861</Modified>
+      <Modified>2017-10-06T09:12:47.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -636,47 +636,47 @@
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-27T09:12:33.792</Modified>
+      <Modified>2017-10-06T09:13:25.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-09-27T09:12:44.897</Modified>
+      <Modified>2017-10-06T09:13:35.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2017-09-27T09:12:44.929</Modified>
+      <Modified>2017-10-06T09:13:35.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-09-27T09:12:45.021</Modified>
+      <Modified>2017-10-06T09:13:35.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-09-27T09:12:45.157</Modified>
+      <Modified>2017-10-06T09:13:35.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-09-27T09:12:45.203</Modified>
+      <Modified>2017-10-06T09:13:36.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-09-27T09:12:45.333</Modified>
+      <Modified>2017-10-06T09:13:36.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\UnityEngine.VR.dll">
       <PackagePath>UnityEngine.VR.dll</PackagePath>
-      <Modified>2017-09-27T09:12:45.363</Modified>
+      <Modified>2017-10-06T09:13:36.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-09-27T09:12:43.050</Modified>
+      <Modified>2017-10-06T09:13:34.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
-      <Modified>2017-09-27T09:12:43.080</Modified>
+      <Modified>2017-10-06T09:13:34.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yi.b.ding\Desktop\HoloLens\ScenarioDemo\App\ScenarioDemo\bin\x86\Release\Core\ScenarioDemo.exe">
       <PackagePath>ScenarioDemo.exe</PackagePath>
-      <Modified>2017-09-27T09:12:49.560</Modified>
+      <Modified>2017-10-06T09:13:39.467</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

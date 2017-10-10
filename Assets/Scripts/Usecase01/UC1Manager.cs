@@ -14,4 +14,6 @@ public class UC1Manager : MonoBehaviour {
     {
         SceneManager.LoadScene("main", LoadSceneMode.Single);
     }
+
+    
 }

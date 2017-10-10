@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
+using System.IO;
+using UnityEngine.SceneManagement;
 public class MainManager : MonoBehaviour {
 
     public GameObject no2Panel_01;
@@ -24,6 +26,19 @@ public class MainManager : MonoBehaviour {
     public GameObject no3Panel_09;
     public GameObject no2Panel_10;
     public GameObject no3Panel_10;
+
+    //トークン取得用URL
+    private string bingTokenUrl = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken";
+    private string apiKey = "b2a4aad438524c979b19b1f36c39d732";
+    //API呼び出し用URL
+    private string bingAPIUrl = "https://speech.platform.bing.com/speech/recognition/interactive/cognitiveservices/v1?language=ja-JP ";
+
+    private GameObject no2Panel_Current;
+    private GameObject no3Panel_Current;
+    private Vector3 previousNo2PanelPostion;
+    private Vector3 previousNo3PanelPostion;
+
+    private const float moveInterval = 2f;
 
     //private enum SubPanelPosition
     //{
@@ -83,8 +98,29 @@ public class MainManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+       
+        // Do a raycast into the world that will only hit the Spatial Mapping mesh.
+        var headPosition = Camera.main.transform.position;
+        var gazeDirection = Camera.main.transform.forward;
+
+        RaycastHit hitInfo;
+        if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
+        {
+            if (Microphone.IsRecording(null)) return;
+            StartCoroutine(RecognizeVoice());
+        }
+        else
+        {
+            var debugText = GameObject.FindGameObjectWithTag("DebugText");
+            var textM = debugText.GetComponent<TextMesh>();
+            textM.text = "No voice recognition";
+        }
+    }
+
+    public void VoiceRecognition()
+    {
+        //StartCoroutine(RecognizeVoice());
+    }
 
     /// <summary>
     /// Nikke button clicked
@@ -361,4 +397,166 @@ public class MainManager : MonoBehaviour {
     {
         return new Color(r / 255, g / 255, b / 255);
     }
+
+    IEnumerator RecognizeVoice()
+    {
+        AudioSource audio = GetComponentInChildren<AudioSource>();
+        audio.clip = Microphone.Start(null, false, 2, 16000);
+        //audio.loop = true;
+        //while (!(Microphone.GetPosition(null) > 0)) { }
+        //Debug.Log("start playing... position is " + Microphone.GetPosition(null));
+
+        //textM.text = "start playing... position is " + Microphone.GetPosition(null);
+
+        yield return new WaitForSeconds(2);
+        //audio.Play();
+
+        AudioClip clip = audio.clip;
+        string audioFile = AudioSave.Save("HoloUC_WavJp", clip);
+
+        //textM.text = audioFile;
+
+        //textM.text = "start getting token...";
+
+        //yield return new WaitForSeconds(1);
+
+        var bingHeaders = new Dictionary<string, string>() {
+            { "Ocp-Apim-Subscription-Key", apiKey }
+        };
+        //Tokenの取得
+        //POSTで投げたいのでダミーとして空のバイト配列を入れている
+        WWW www = new WWW(bingTokenUrl, new byte[1], bingHeaders);
+        yield return www;
+        string bingToken = www.text;
+
+        //textM.text = www.text;
+
+        //SpeechAPIの呼び出し
+        var headers = new Dictionary<string, string>() {
+            { "Accept", @"application/json;text/xml"},
+            { "Method", "POST"},
+            { "Host", @"speech.platform.bing.com"},
+            { "Content-Type", @"audio/wav; codec=""audio/pcm""; samplerate=16000"},
+            { "Authorization", "Bearer "+ bingToken}
+        };
+
+        byte[] buffer = null;
+
+        using (FileStream fs = new FileStream(audioFile, FileMode.Open, FileAccess.Read))
+        {
+            buffer = new Byte[fs.Length];
+            fs.Read(buffer, 0, buffer.Length);
+        }
+
+        WWW wwwAPI = new WWW(bingAPIUrl, buffer, headers);
+
+        yield return wwwAPI;
+        //textM.text = wwwAPI.text;
+
+        var myResponse = JsonUtility.FromJson<MySpeechResponse>(wwwAPI.text);
+
+        DoSthByVoice(myResponse.DisplayText);
+
+    }
+
+    private void DoSthByVoice(string voiceText)
+    {
+        if (String.IsNullOrEmpty(voiceText)) return;
+
+        var debugText = GameObject.FindGameObjectWithTag("DebugText");
+        var textM = debugText.GetComponent<TextMesh>();
+        textM.text = voiceText;
+
+        GameObject panel2 = null;
+        GameObject panel3 = null;
+
+        switch (voiceText)
+        {
+            case "日経":
+                panel2 = no2Panel_01;
+                panel3 = no3Panel_01;
+                break;
+            case "トピックス":
+                panel2 = no2Panel_02;
+                panel3 = no3Panel_02;
+                break;
+            case "ナスダック":
+                panel2 = no2Panel_04;
+                panel3 = no3Panel_04;
+                break;
+            case "ブラジル":
+                panel2 = no2Panel_05;
+                panel3 = no3Panel_05;
+                break;
+            case "上海":
+                panel2 = no2Panel_06;
+                panel3 = no3Panel_06;
+                break;
+            case "香港":
+                panel2 = no2Panel_07;
+                panel3 = no3Panel_07;
+                break;
+            case "初期化":
+                SceneManager.LoadScene("Usecase01", LoadSceneMode.Single);
+                return;
+            case "メインメニュー":
+                SceneManager.LoadScene("main", LoadSceneMode.Single);
+                return;
+        }
+
+        if (panel2 == null || panel3 == null) return;
+
+        ToogleControlPanels(panel2, panel3);
+    }
+
+    private void ToogleControlPanels(GameObject no2Panel, GameObject no3Panel)
+    {
+        if (no2Panel == null || no3Panel == null)
+        {
+            return;
+        }
+
+        if (no2Panel_Current != null || no3Panel_Current != null)
+        {
+            if (no2Panel_Current.name == no2Panel.name)
+            {
+                return;
+            }
+
+            ToogleCurrentPanelPosition(no2Panel_Current, no3Panel_Current, false);
+        }
+
+        no2Panel_Current = no2Panel;
+        no3Panel_Current = no3Panel;
+        ToogleCurrentPanelPosition(no2Panel_Current, no3Panel_Current, true);
+    }
+
+    private void ToogleCurrentPanelPosition(GameObject panel2, GameObject panel3, bool active)
+    {
+        if (active)
+        {
+            previousNo2PanelPostion = panel2.transform.position;
+            previousNo3PanelPostion = panel3.transform.position;
+
+            iTween.MoveTo(panel2, new Vector3(-0.1f, 0.1f, 1.3f), moveInterval);
+            iTween.MoveTo(panel3, new Vector3(0.12f, 0.1f, 1.3f), moveInterval);
+            //new WaitForSeconds(1);
+            //panel2.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            //panel3.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        }
+        else
+        {
+            iTween.MoveTo(panel2, previousNo2PanelPostion, moveInterval);
+            iTween.MoveTo(panel3, previousNo3PanelPostion, moveInterval);
+        }
+    }
+}
+
+[Serializable]
+public class MySpeechResponse
+{
+    public string RecognitionStatus;
+    public string DisplayText;
+    public string Offset;
+    public string Duration;
 }

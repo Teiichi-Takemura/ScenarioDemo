@@ -11,14 +11,14 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>WSAPlayer:21</UnityBuildTarget>
     <UnityVersion>5.6.3p2</UnityVersion>
     <RootNamespace></RootNamespace>
-    <LangVersion>4</LangVersion>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,8 +45,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="Boo.Lang" />
-    <Reference Include="UnityScript.Lang" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
@@ -120,6 +118,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ScenarioDemo.Plugins.csproj">
+      <Project>{1892CC8F-E4A3-1956-B906-23D7D7A1639A}</Project>
+      <Name>ScenarioDemo.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="ScenarioDemo.csproj">
       <Project>{3F1CDD9A-8FAE-2DD2-EE6B-04C41AAFB4A6}</Project>
       <Name>ScenarioDemo</Name>
@@ -206,6 +208,7 @@
     <None Include="Assets\HoloToolkit\Utilities\Shaders\WindowOcclusion.shader" />
     <None Include="Assets\HoloToolkit\Utilities\Shaders\macro.cginc" />
     <None Include="Assets\Materials\3D Text Shader.shader" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
