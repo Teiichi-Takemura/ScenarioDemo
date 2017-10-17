@@ -260,8 +260,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4191943620457012}
-  - component: {fileID: 54607728187617368}
   - component: {fileID: 114037092525006334}
+  - component: {fileID: 114749370196212920}
+  - component: {fileID: 65049846486645200}
   m_Layer: 0
   m_Name: No2Panel
   m_TagString: Untagged
@@ -441,7 +442,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572806673216150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.414, z: 2}
+  m_LocalPosition: {x: -0.338, y: 0.432, z: 2}
   m_LocalScale: {x: 0.6, y: 0.42, z: 1}
   m_Children:
   - {fileID: 4673372267380044}
@@ -742,7 +743,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 16a2cb75fdf43164188c828be27578b2, type: 2}
+  - {fileID: 2100000, guid: cc01efc3116d19641b64a6586bca7381, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1343,21 +1344,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1290204063520528}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54607728187617368
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572806673216150}
-  serializedVersion: 2
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!64 &64005201529044084
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1400,6 +1386,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65049846486645200
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572806673216150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.41, y: 0.44, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65652442843674620
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1736,6 +1734,27 @@ MonoBehaviour:
   DisabledSelected: {fileID: 2800000, guid: 5fe63c5654284e844a675f6affa61deb, type: 3}
   CurrentValue: {fileID: 0}
   Button: {fileID: 0}
+--- !u!114 &114749370196212920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572806673216150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11df72d2456638144bb49efc9c226e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaceableBoundsMaterial: {fileID: 2100000, guid: 6d2d706e08c91884bab61aa90ee2e072,
+    type: 2}
+  NotPlaceableBoundsMaterial: {fileID: 2100000, guid: 11b44aa7f36ccbf41988d623310023d2,
+    type: 2}
+  PlaceableShadowMaterial: {fileID: 2100000, guid: 67aadc63cc2ec5c45beb9f33322fc736,
+    type: 2}
+  NotPlaceableShadowMaterial: {fileID: 2100000, guid: f0fd2541c44fef047b0994d72ea6955e,
+    type: 2}
+  PlacementSurface: 2
+  ChildrenToHide: []
 --- !u!114 &114758134844007232
 MonoBehaviour:
   m_ObjectHideFlags: 1

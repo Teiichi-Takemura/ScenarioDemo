@@ -423,6 +423,8 @@
     <Compile Include="Assets\Scripts\ManipulationController.cs" />
     <Compile Include="Assets\Scripts\No2PanelSlide.cs" />
     <Compile Include="Assets\Scripts\Quad1Manager.cs" />
+    <Compile Include="Assets\Scripts\SurfaceMapping\Placeable.cs" />
+    <Compile Include="Assets\Scripts\SurfaceMapping\PlaySpaceManager.cs" />
     <Compile Include="Assets\Scripts\Usecase01\MainManager.cs" />
     <Compile Include="Assets\Scripts\Usecase01\MainPanelController.cs" />
     <Compile Include="Assets\Scripts\Usecase01\MicController.cs" />

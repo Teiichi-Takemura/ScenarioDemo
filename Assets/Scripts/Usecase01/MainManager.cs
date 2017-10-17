@@ -538,8 +538,11 @@ public class MainManager : MonoBehaviour {
             previousNo2PanelPostion = panel2.transform.position;
             previousNo3PanelPostion = panel3.transform.position;
 
-            iTween.MoveTo(panel2, new Vector3(-0.1f, 0.1f, 1.3f), moveInterval);
-            iTween.MoveTo(panel3, new Vector3(0.12f, 0.1f, 1.3f), moveInterval);
+            iTween.MoveTo(panel2, new Vector3(-0.1f, 0.1f, 1.2f), moveInterval);
+            iTween.MoveTo(panel3, new Vector3(0.12f, 0.1f, 1.2f), moveInterval);
+
+            //SetHalo(panel2, true);
+            //SetHalo(panel3, true);
             //new WaitForSeconds(1);
             //panel2.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             //panel3.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
@@ -548,6 +551,18 @@ public class MainManager : MonoBehaviour {
         {
             iTween.MoveTo(panel2, previousNo2PanelPostion, moveInterval);
             iTween.MoveTo(panel3, previousNo3PanelPostion, moveInterval);
+
+            //SetHalo(panel2, false);
+            //SetHalo(panel3, false);
+        }
+    }
+
+    private void SetHalo(GameObject panel, bool enable)
+    {
+        var halo = panel.GetComponentInChildren<Behaviour>();
+        if (halo != null)
+        {
+            halo.enabled = enable;
         }
     }
 }
