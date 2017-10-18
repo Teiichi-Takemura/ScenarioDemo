@@ -2931,7 +2931,7 @@ MonoBehaviour:
   ActivePlanes: []
   SurfacePlanePrefab: {fileID: 169982, guid: 2f9b95a0211b24f4b9e2795308f40c47, type: 2}
   MinArea: 0.025
-  drawPlanesMask: -1
+  drawPlanesMask: 15
   destroyPlanesMask: 16
 --- !u!4 &740070304
 Transform:
@@ -4687,35 +4687,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1572806673216150, guid: bec1bdfbe4dd36443a08196877611311,
     type: 2}
   m_PrefabInternal: {fileID: 1335976681}
---- !u!65 &1045898221
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1045898220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.41, y: 0.44, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1061446831 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1354027005783764, guid: 9bc75565dd9a1dc46a9e0daa0fa3c500,
     type: 2}
   m_PrefabInternal: {fileID: 576036792}
---- !u!65 &1061446832
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1061446831}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1079475240 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1572806673216150, guid: bec1bdfbe4dd36443a08196877611311,
@@ -5645,6 +5621,11 @@ Prefab:
     - target: {fileID: 1572806673216150, guid: bec1bdfbe4dd36443a08196877611311, type: 2}
       propertyPath: m_Name
       value: No2Panel-01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749370196212920, guid: bec1bdfbe4dd36443a08196877611311,
+        type: 2}
+      propertyPath: PlacementSurface
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bec1bdfbe4dd36443a08196877611311, type: 2}
