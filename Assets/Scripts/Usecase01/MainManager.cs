@@ -435,7 +435,7 @@ public class MainManager : MonoBehaviour {
         var headers = new Dictionary<string, string>() {
             { "Accept", @"application/json;text/xml"},
             { "Method", "POST"},
-            { "Host", @"speech.platform.bing.com"},
+            //{ "Host", @"speech.platform.bing.com"},
             { "Content-Type", @"audio/wav; codec=""audio/pcm""; samplerate=16000"},
             { "Authorization", "Bearer "+ bingToken}
         };

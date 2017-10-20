@@ -170,6 +170,7 @@ public class Placeable : MonoBehaviour, IInputClickHandler
             float dist = (gameObject.transform.position - targetPosition).magnitude;
             if (dist > 0)
             {
+                // Todo : Need adding a flag to prevent a panel to move back from focus view.
                 gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPosition, placementVelocity / dist);
             }
             else
