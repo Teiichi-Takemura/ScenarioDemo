@@ -29,6 +29,13 @@ public class No2PanelController : MonoBehaviour {
         if (No5Panel == null) return;
 
         No5Panel.SetActive(true);
+
+#if UNITY_UWP && !UNITY_EDITOR
+        if (SharingManager.Instance.IsExportEventEnabled)
+        {  
+            SharingManager.Instance.SendEvent(System.Text.Encoding.UTF8.GetBytes("ShowNextPanel"));
+        }
+#endif
     }
 
     //private void SetNo4PanelText()
@@ -36,7 +43,7 @@ public class No2PanelController : MonoBehaviour {
     //    if (No4Panel == null) return;
 
     //    var labels = No4Panel.GetComponentsInChildren<TextMesh>();
-        
+
     //    foreach (var label in labels)
     //    {
     //        switch (label.name)

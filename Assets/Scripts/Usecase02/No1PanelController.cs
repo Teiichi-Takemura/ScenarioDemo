@@ -176,6 +176,15 @@ public class No1PanelController : MonoBehaviour
         // Set value of labels in No.5 panel
         SetNo5PanelText(
             stockCode, stockValue, stockName, isPlusToYesterday, ratioToYesterday, valueToYesterday, stockIndustry);
+
+#if UNITY_UWP && !UNITY_EDITOR
+        if (SharingManager.Instance.IsExportEventEnabled)
+        {
+            string transferData = string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}",
+                "SelectStock", stockCode, stockValue, stockName, isPlusToYesterday.ToString(), ratioToYesterday, valueToYesterday, stockIndustry);
+            SharingManager.Instance.SendEvent(System.Text.Encoding.UTF8.GetBytes(transferData));
+        }
+#endif
     }
 
     private void SetNo2PanelText(string stockCode, string stockValue, string stockName, bool isPlusToYesterday,

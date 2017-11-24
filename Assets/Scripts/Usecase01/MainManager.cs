@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.IO;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,7 @@ public class MainManager : MonoBehaviour {
     public GameObject no3Panel_09;
     public GameObject no2Panel_10;
     public GameObject no3Panel_10;
+    public Toggle toggleSpeechRecoginition;
 
     //トークン取得用URL
     private string bingTokenUrl = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken";
@@ -106,14 +108,28 @@ public class MainManager : MonoBehaviour {
         RaycastHit hitInfo;
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
         {
-            if (Microphone.IsRecording(null)) return;
-            StartCoroutine(RecognizeVoice());
+            if (IsSpeechRecognitionAvaliable)
+            {
+                if (Microphone.IsRecording(null)) return;
+                StartCoroutine(RecognizeVoice());
+            }
         }
         else
         {
             var debugText = GameObject.FindGameObjectWithTag("DebugText");
             var textM = debugText.GetComponent<TextMesh>();
             textM.text = "No voice recognition";
+        }
+    }
+
+    private bool IsSpeechRecognitionAvaliable
+    {
+        get
+        {
+            if (toggleSpeechRecoginition != null)
+                return toggleSpeechRecoginition.isOn;
+
+            return false;
         }
     }
 

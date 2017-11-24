@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 using HoloToolkit.Unity.SpatialMapping;
+using HoloToolkit.Unity;
+using UnityEngine.VR.WSA;
 
 /// <summary>
 /// Enumeration containing the surfaces on which a GameObject
@@ -481,13 +483,55 @@ public class Placeable : MonoBehaviour, IInputClickHandler
 
         // Follow the user's gaze.
         float dist = Mathf.Abs((gameObject.transform.position - moveTo).magnitude);
+
+        // Add by Yi.Ding for P2P sharing
+        WorldAnchor worldAnchor = gameObject.GetComponent<WorldAnchor>();
+        if (worldAnchor != null)
+        {
+            //WorldAnchorManager.Instance.RemoveAnchor(gameObject);
+            WorldAnchor.Destroy(worldAnchor);
+        }
+        
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, moveTo, placementVelocity / dist);
+
+        // Add by Yi.Ding for P2P sharing
+        _transferCounter++;
+        if (_transferCounter == 5)
+        {
+            //if (sharingController == null) return;
+            //StartCoroutine(TransferWorldAnchor());
+            worldAnchor = gameObject.AddComponent<WorldAnchor>();
+            //var sharingManager = sharingController.GetComponentInChildren<SharingManager>();
+            var sharingManager = SharingManager.Instance;
+            if (sharingManager == null) return;
+            sharingManager.TransferAnchor(worldAnchor);
+            _transferCounter = 0;
+        }
+
+        //TransferAnchor(gameObject.name);
+        //var anchorName = WorldAnchorManager.Instance.AttachAnchor(gameObject, gameObject.name);
+        //var worldAnchor = WorldAnchorManager.Instance.AnchorStore.Load(anchorName, gameObject);
+        //worldAnchor = gameObject.AddComponent<WorldAnchor>();
+        //SharingManager.Instance.TransferAnchor(worldAnchor);
 
         // Orient the object.
         // We are using the return value from Physics.Raycast to instruct
         // the OrientObject function to align to the vertical surface if appropriate.
         OrientObject(hit, surfaceNormal);
     }
+
+    // Add by Yi.Ding for P2P sharing
+    int _transferCounter = 0;
+    public GameObject sharingController;
+    //public IEnumerator TransferWorldAnchor()
+    //{
+    //    //var anchorName = WorldAnchorManager.Instance.AttachAnchor(gameObject, gameObject.name);
+    //    //var worldAnchor = WorldAnchorManager.Instance.AnchorStore.Load(gameObject.name, gameObject);
+    //    var worldAnchor = gameObject.AddComponent<WorldAnchor>();
+
+    //    SharingManager.Instance.TransferAnchor(worldAnchor);
+    //    yield return null;
+    //}
 
     /// <summary>
     /// Displays the bounds asset.
